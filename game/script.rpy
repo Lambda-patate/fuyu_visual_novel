@@ -23,7 +23,7 @@ label start:
     scene moone
     with fade
 
-    "Vous vous réveillez dans un endroit sombre."
+    "Vous vous réveillez dans un endroit sombre qui sent fort le salpètre et la mousse."
 
     m "Qu'est ce que je fous ici ?? Cet endroit me rappelle quelque chose, mais je ne saurais dire quoi exactement."
 
@@ -223,7 +223,7 @@ label position:
 
     scene rue
     
-    "Vous marchez côte à côte, déambulez dans des petites rue pavées bordées de maisons à colombages, vous tournez après ce drôle d'oiseau, le suivez, imitez ces pas."
+    "Vous marchez côte à côte, déambulez dans des petites rue pavées bordées de maisons à colombages, vous tournez après ce drôle d'oiseau, le suivez, imitez ses pas."
 
     scene campagne
 
