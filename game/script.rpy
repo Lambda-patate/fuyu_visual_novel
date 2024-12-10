@@ -31,7 +31,7 @@ label start:
 
     m "Je ne me souviens pas d'avoir touché le sol."
 
-    m "... Bon.. Ignorons ça, je dois sortir d'ici au plus vite, ça manque d'oxygène."
+    m "... Bon.. Ignorons ça, je dois sortir d'ici au plus vite, ça pue et ça manque d'oxygène."
 
     scene allemagne
     with fade
