@@ -103,7 +103,7 @@ label poème:
 
     $ poème = True
 
-    m "Je ne connais même pas,ni ton nom ni quoi qu'ce soit,"
+    m "Je ne connais même pas, ni ton nom ni quoi qu'ce soit,"
 
     show fuyu_normal
 
@@ -186,7 +186,7 @@ label tombé:
     hide fuyu_main
     show fuyu_ferme
     
-    f "Mais, comment tu fais pour tomber comme ça ?? "
+    f "Mais, comment tu fais pour tomber comme ça, deux fois d'affliée ?? "
 
     f "Tiens, relève toi mieux cette fois ci."
 
