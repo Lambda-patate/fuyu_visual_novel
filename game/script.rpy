@@ -288,6 +288,8 @@ label oui :
 
     "Après cette réponse, trop courte vous laissez un malaise s'installer."
 
+    m "Tu.. Tu vas bien ? Tu me regardes bizarrement..."
+
     show fuyu_kittycutter
     with dissolve
 
