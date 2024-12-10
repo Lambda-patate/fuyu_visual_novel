@@ -299,6 +299,7 @@ label oui :
     show fuyu_kittycutteropensharp
     with dissolve
 
+    "Tout comme Lantier, Fuyu a eu une petite absence.. "
 
 
     "{b}Mauvaise fin{/b}."
