@@ -278,11 +278,7 @@ label position:
 
     "Vous marchez envore longtemps dans ces paysages sublimes, sans pouvoir détacher vos regards."
 
-    #il manque une illu et un peu de contenu mais bon c'est la 1.0 faut pas trop en attendre.
-
-    "{b}Fin heureuse campagne{/b}."
-
-    return
+    jump chez_lui
 
 label oui :
 
@@ -303,5 +299,13 @@ label oui :
 
 
     "{b}Mauvaise fin{/b}."
+
+label chez_lui :
+
+    "Vous arrivez chez Fuyu."
+    
+    "{b}Fin heureuse campagne{/b}."
+
+    return
 
 
