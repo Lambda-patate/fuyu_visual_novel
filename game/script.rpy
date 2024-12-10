@@ -201,7 +201,7 @@ label tombé:
 
     m "Mer-Merci."
 
-    f "Ce n'est rien ! Comment je peux t'aider ?"
+    f "Ce n'est rien ! Comment puis-je t'aider ?"
 
     m "Tu m'as déjà aidé, je ne peux pas tout te demander .."
 
