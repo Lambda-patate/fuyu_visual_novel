@@ -26,13 +26,21 @@ define gui.show_name = True
 
 ## La version du jeu.
 
-define config.version = "1.1"
+define config.version = "1.2"
 
 
 ## Texte placé sur l'écran "À propos" du jeu. Placez le texte entre triples
 ## guillemets, et laissez une ligne entre les paragraphes.
 
 define gui.about = _p("""Le jeu est bien avancé !! Mais y'a encore des trucs à rajouter ^^
+Liste des fins :
+- Fin Château
+- Fin Lantier
+- Fin Rizz
+- Fin Gros misogyne
+- Fin Dérapage
+- Fin pas finie
+
 """)
 
 
