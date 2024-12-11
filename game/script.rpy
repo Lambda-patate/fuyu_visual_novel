@@ -410,25 +410,37 @@ label rizz :
     f "De lait. Il n'a fait qu'une commande."
 
     m "Ah désolé.e.."
+
     show fuyu_content
+
     f "C'est rien t'excuse pas !"
+
     show fuyu_normal
-    "Vous vous regardés, géné.e.s, pendant un court moment qui vous semble une éternité, ne sachant comment enchaîner."
+
+    "Vous vous regardez, géné.e.s, pendant un court moment qui vous semble une éternité, ne sachant comment enchaîner."
+
     "Vous vous préparez à dire quelque chose, mais iel vous devance."
+
     f "Tu es tombé.e tout à l'heure, tu te souviens ?"
+
     m "ou-oui ?"
+
     "Revenir sur ce sujet vous met un peu mal à l'aise."
+
     f "On peut dire que .."
 
     show fuyu_regardeailleurs
 
     f "Tu es tombé.e sous mon charme. ?"
+
     m "!!..."
+
     m "*murmure* On peut dire ça..."
 
     show fuyu_content
-    
+
     f "Tu as dit quelque chose ?"
+    
     m "No-on ! non non rien du tout.."
 
     "{b}Fin Rizz{/b}."
