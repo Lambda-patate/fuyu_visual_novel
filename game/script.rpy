@@ -364,6 +364,14 @@ label rizz :
             m "Parce que quand je te vois, je pleure sur le poulet."
         "développeur chez nintendo":
             m "Parce que t'as un corps de DS."
+        "dresseur canin":
+            m "Ton daron serait pas dresseur canin ?"
+            m "Parce que t'es une chienne."
+            show fuyu_enerve
+            f "... "
+            "{b}Mauvaise fin{/b}."
+            return
+
     
     f "haha ! "
 
