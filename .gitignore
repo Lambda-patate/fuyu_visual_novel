@@ -7,3 +7,5 @@ traceback.txt
 *.rpyc
 game/cache
 game/saves/
+www-data/novel
+
