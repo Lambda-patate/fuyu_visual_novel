@@ -411,6 +411,7 @@ label rizz :
 
     m "Ah désolé.e.."
 
+    hide fuyu_ferme
     show fuyu_content
 
     f "C'est rien t'excuse pas !"
@@ -440,7 +441,7 @@ label rizz :
     show fuyu_content
 
     f "Tu as dit quelque chose ?"
-    
+
     m "No-on ! non non rien du tout.."
 
     "{b}Fin Rizz{/b}."
