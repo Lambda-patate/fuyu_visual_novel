@@ -300,6 +300,9 @@ label oui :
 
     "{b}Mauvaise fin{/b}."
 
+    return
+
+
 label chez_lui :
 
     "Vous arrivez chez Fuyu."
