@@ -322,7 +322,7 @@ label chez_lui :
 
             jump rizz
         
-        "C'est la pus belle ville je trouve.":
+        "C'est la plus belle ville je trouve.":
 
             jump eschwege_lover
 
