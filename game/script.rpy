@@ -149,7 +149,7 @@ label marry:
 
     if poème:
 
-        "Vous avez publié des dizaines de receuils de poèmes, écris par vous deux au coin du feu."
+        "Vous avez publié des dizaines de receuils de poèmes, écrits par vous deux au coin du feu."
 
     "Vous vivez ensemble et êtes heureux."
 
