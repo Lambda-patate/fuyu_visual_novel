@@ -13,6 +13,7 @@ define m = Character(_("Moi"), color="#80b9fe")
 # This is a variable that is True if you've compared a VN to a book, and False
 # otherwise.
 default book = False
+default rizz = False
 
 # The game starts here.
 label start:
