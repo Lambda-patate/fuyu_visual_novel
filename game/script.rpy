@@ -430,6 +430,7 @@ label rizz :
 
     f "On peut dire que .."
 
+    hide fuyu_normal
     show fuyu_regardeailleurs
 
     f "Tu es tombé.e sous mon charme. ?"
@@ -438,6 +439,7 @@ label rizz :
 
     m "*murmure* On peut dire ça..."
 
+    hide fuyu_regardeailleurs
     show fuyu_content
 
     f "Tu as dit quelque chose ?"
