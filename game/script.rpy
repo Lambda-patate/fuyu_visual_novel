@@ -305,7 +305,7 @@ label oui :
 
 label chez_lui :
 
-    "Vous arrivez chez Fuyu."
+    "Vous arrivez dans la ville de Fuyu."
 
     scene eschwege1
 
@@ -357,9 +357,9 @@ label rizz :
     menu:
         m "Ton père est un ..."
 
-        "Voleur":
+        "voleur":
             m "Ton père est un voleur, il a volé toutes les étoiles du ciel pour les mettre dans tes yeux."
-        "Boucher":
+        "boucher":
             m "Ton père est pas boucher ?"
             m "Parce que quand je te vois, je pleure sur le poulet."
         "développeur chez nintendo":
@@ -369,7 +369,31 @@ label rizz :
             m "Parce que t'es une chienne."
             show fuyu_enerve
             f "... "
-            "{b}Mauvaise fin{/b}."
+            show fuyu_kittycutter
+            with dissolve
+
+            show fuyu_kittycutteropen
+            with dissolve
+
+            show fuyu_kittycutteropensharp
+            with dissolve
+
+            "{b}Fin Gros misogyne{/b}."
+            return
+        "arabe":
+            m "Ton père il serait pas arabe ?" #crédits à Sarah pour la blague que je ne cotionne pas
+            m "Parce que t'es une bombe."
+            f "C'est bien gentil mais ta blague est.. Comment dire.."
+            show fuyu_kittycutter
+            with dissolve
+
+            show fuyu_kittycutteropen
+            with dissolve
+
+            show fuyu_kittycutteropensharp
+            with dissolve
+            
+            "{b}Fin Dérapage{/b}."
             return
 
     
@@ -390,6 +414,16 @@ label rizz :
     return
 
 label eschwege_lover :
+    show fuyu_content
+
+    f "Viens, on est pas loin de chez moi !"
+
+    scene Chambre_de_Fuyu
+    show fuyu_normal
+
+    f "Bienvenue !!"
+
+    m "Merci !!"
 
     "J'ai plus d'idées là aidez moi (oups vous pouvez revenir en arrière pour l'autre choix 10x mieux)"
 
