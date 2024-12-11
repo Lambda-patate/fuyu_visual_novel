@@ -419,11 +419,15 @@ label rizz :
     m "ou-oui ?"
     "Revenir sur ce sujet vous met un peu mal à l'aise."
     f "On peut dire que .."
+
     show fuyu_regardeailleurs
+
     f "Tu es tombé.e sous mon charme. ?"
     m "!!..."
     m "*murmure* On peut dire ça..."
+
     show fuyu_content
+    
     f "Tu as dit quelque chose ?"
     m "No-on ! non non rien du tout.."
 
