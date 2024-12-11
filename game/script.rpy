@@ -138,7 +138,7 @@ label marry:
     scene black
     with dissolve
 
-    "Après ça, combien d'années se sont écoulées ? Des mois, des semaines, des décénies, nous ne sauront jamais."
+    "Après ça, combien d'années se sont écoulées ? Des mois, des semaines, des décénies, nous ne saurons jamais."
 
     "Tout ce que l'on sait c'est que vous vous êtes marié.es"
 
@@ -153,7 +153,7 @@ label marry:
 
     "Vous vivez ensemble et êtes heureux."
 
-    "{b}Fin Heureuse château{/b}."
+    "{b}Fin Château{/b}."
     
     return
 
@@ -298,7 +298,7 @@ label oui :
     "Tout comme Lantier, Fuyu a eu une petite, disons, absence.. "
 
 
-    "{b}Mauvaise fin{/b}."
+    "{b}Fin Lantier{/b}."
 
     return
 
