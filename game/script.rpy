@@ -227,7 +227,7 @@ label position:
 
     scene campagne
 
-    "Depuis combien de temps marchez vous ? Vous n'en savez rien. Vous êtes à présent en rase campagne allemande, suivant un oiseau violet dont vous ne connessez rien et pourtant tout à la fois, puisque vous l'avez observé durant tout votre voyage. "
+    "Depuis combien de temps marchez vous ? Vous n'en savez rien. Vous êtes à présent en rase campagne allemande, suivant un oiseau violet dont vous ne connaissez rien et pourtant tout à la fois, puisque vous l'avez observé durant tout votre voyage. "
 
     m "Comment tu t'appelles ?"
 
@@ -295,7 +295,7 @@ label oui :
     show fuyu_kittycutteropensharp
     with dissolve
 
-    "Tout comme Lantier, Fuyu a eu une petite absence.. "
+    "Tout comme Lantier, Fuyu a eu une petite, disons, absence.. "
 
 
     "{b}Mauvaise fin{/b}."
@@ -303,9 +303,90 @@ label oui :
 label chez_lui :
 
     "Vous arrivez chez Fuyu."
-    
-    "{b}Fin heureuse campagne{/b}."
+
+    scene eschwege1
+
+    show fuyu_content
+
+    f "On est arrivés dans ma ville !"
+
+    m "C'est magnifique.."
+
+    menu :
+        f "Tu trouves ?"
+
+        "Pas autant que toi." :
+
+            jump rizz
+        
+        "C'est la pus belle ville je trouve.":
+
+            jump eschwege_lover
 
     return
+
+label rizz :
+
+    show fuyu_regardeailleurs
+
+    f "Ah~"
+
+    f "Merci .."
+
+    show fuyu_content
+
+    m "T'aurais pas à boire ?"
+
+    f "Si, j'ai du redbull tiens !"
+
+    m "Ah elle est fraîche !"
+
+    f "Pas autant que toi.."
+
+    show fuyu_regardeailleurs
+
+    m "..."
+
+    "Vous siroptez lentement votre canette, ne sachant que dire."
+
+    "Vous avez une idée de génie, vous commencez votre phrase avec assurance, mais oubliez la fin."
+
+    menu:
+        m "Ton père est un ..."
+
+        "Voleur":
+            m "Ton père est un voleur, il a volé toutes les étoiles du ciel pour les mettre dans tes yeux."
+        "Boucher":
+            m "Ton père est pas boucher ?"
+            m "Parce que quand je te vois, je pleure sur le poulet."
+        "développeur chez nintendo":
+            m "Parce que t'as un corps de DS."
+    
+    f "haha ! "
+
+    show fuyu_normal
+
+    f "Raté, son métier c'est livreur."
+
+    m "Livreur de quoi ?"
+
+    show fuyu_ferme
+
+    f "De lait. Il n'a fait qu'une commande."
+
+    "{b}Fin Rizz{/b}."
+
+    return
+
+label eschwege_lover :
+
+    "J'ai plus d'idées là aidez moi (oups vous pouvez revenir en arrière pour l'autre choix 10x mieux)"
+
+    "{b}Fin pas finie{/b}."
+
+
+
+
+
 
 
