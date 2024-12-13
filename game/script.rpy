@@ -14,6 +14,8 @@ define m = Character(_("Moi"), color="#80b9fe")
 # otherwise.
 default book = False
 default rizz = False
+default tomber = False
+default k_pop = False
 
 # The game starts here.
 label start:
@@ -351,7 +353,7 @@ label rizz :
 
     m "..."
 
-    "Vous siroptez lentement votre canette, ne sachant que dire."
+    "Vous sirotez lentement votre canette, ne sachant que dire."
 
     "Vous avez une idée de génie, vous commencez votre phrase avec assurance, mais oubliez la fin."
 
@@ -382,7 +384,7 @@ label rizz :
             "{b}Fin Gros misogyne{/b}."
             return
         "arabe":
-            m "Ton père il serait pas arabe ?" #crédits à Sarah pour la blague que je ne cotionne pas
+            m "Ton père il serait pas arabe ?" #crédits à Sarah pour la blague que je ne cautionne pas
             m "Parce que t'es une bombe."
             f "C'est bien gentil mais ta blague est.. Comment dire.."
             show fuyu_kittycutter
@@ -419,44 +421,60 @@ label rizz :
 
     show fuyu_normal
 
-    "Vous vous regardez, géné.e.s, pendant un court moment qui vous semble une éternité, ne sachant comment enchaîner."
+    if tomber:
+        "Vous vous regardez, géné.e.s, pendant un court moment qui vous semble une éternité, ne sachant comment enchaîner."
 
-    "Vous vous préparez à dire quelque chose, mais iel vous devance."
+        "Vous vous préparez à dire quelque chose, mais iel vous devance."
 
-    f "Tu es tombé.e tout à l'heure, tu te souviens ?"
+        f "Tu es tombé.e tout à l'heure, tu te souviens ?"
 
-    m "ou-oui ?"
+        m "ou-oui ?"
 
-    "Revenir sur ce sujet vous met un peu mal à l'aise."
+        "Revenir sur ce sujet vous met un peu mal à l'aise."
 
-    f "On peut dire que .."
+        f "On peut dire que .."
 
-    hide fuyu_normal
-    show fuyu_regardeailleurs
+        hide fuyu_normal
+        show fuyu_regardeailleurs
 
-    f "Tu es tombé.e sous mon charme. ?"
+        f "Tu es tombé.e sous mon charme. ?"
 
-    m "!!..."
+        m "!!..."
 
-    m "*murmure* On peut dire ça..."
+        m "*murmure* On peut dire ça..."
 
-    hide fuyu_regardeailleurs
-    show fuyu_content
+        hide fuyu_regardeailleurs
+        show fuyu_content
 
-    f "Tu as dit quelque chose ?"
+        f "Tu as dit quelque chose ?"
 
-    m "No-on ! non non rien du tout.."
+        m "No-on ! non non rien du tout.."
 
-    "{b}Fin Rizz{/b}."
+        "{b}Fin Rizz{/b}."
 
-    return
+        return
+
+    else:
+        menu:
+            f "Et sinon, t'écoute comme genre de musique ?"
+
+            "Rock":
+                f "Mwokay pas mal.. Classique mais pas mal."
+            "Electro":
+                show fuyu_content
+                f "J'AIME BIEEENG !!!!" #rajouter un skin pour ça, style fuyu beauf jsp
+                f "Nan pardon je m'emporte .."
+            "Pop" :
+                jump pop
+
+
 
 label eschwege_lover :
     show fuyu_content
 
     f "Viens, on est pas loin de chez moi !"
 
-    scene Chambre_de_Fuyu
+    scene Chambre_de_fuyu
     show fuyu_normal
 
     f "Bienvenue !!"
@@ -466,6 +484,30 @@ label eschwege_lover :
     "J'ai plus d'idées là aidez moi (oups vous pouvez revenir en arrière pour l'autre choix 10x mieux)"
 
     "{b}Fin pas finie{/b}."
+
+label pop :
+    f "Alors c'est très bien, mais c'est pas précis.."
+    menu :
+        "Quelle pop ?"
+        "K pop":
+            f "Je vois je vois, et t'écoutes quoi comme chanson ? Je m'y connais un peu.."
+            python :
+                k_pop = renpy.input("Quel.le artiste de k pop ?")
+
+
+            if k_pop == Jimin:
+
+                f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là..."
+                f "Sans jugement bien sûr !"        #insérer fuyu ^^
+
+            elif k_pop == Jungkook or k_pop == JK or k_pop == jungkook :
+                f "Bien sûûr lui là.. Tu connais Seven Days a week donc ?"
+                m "Bien sûr !!"
+                f "Tu hum.. LES PAROLES PTN !! C'est un harceleur et personne ne remarque j'ai l'impression.."
+
+            else :
+                f  "[k_pop]? Connais pas.. Bon mes connaissances sont peut-être un peu limitées.."
+ 
 
 
 
