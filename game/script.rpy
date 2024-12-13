@@ -495,12 +495,11 @@ label pop :
                 k_pop = renpy.input("Quel.le artiste de k pop ?")
 
 
-            if k_pop == Jimin:
+            if k_pop == "Jimin":
 
                 f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là..."
-                f "Sans jugement bien sûr !"        #insérer fuyu ^^
-
-            elif k_pop == Jungkook or k_pop == JK or k_pop == jungkook :
+                
+            elif k_pop == "Jungkook" or k_pop == "JK" or k_pop == "jungkook" :
                 f "Bien sûûr lui là.. Tu connais Seven Days a week donc ?"
                 m "Bien sûr !!"
                 f "Tu hum.. LES PAROLES PTN !! C'est un harceleur et personne ne remarque j'ai l'impression.."
