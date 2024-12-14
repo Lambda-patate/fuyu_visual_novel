@@ -459,13 +459,13 @@ label rizz :
             f "Et sinon, t'écoute comme genre de musique ?"
 
             "Rock":
-                f "Mwokay pas mal.. Classique mais pas mal."
+                f "LOUISE M'A MIS UN GUN SUR LA TEMPE J'ADORE LE ROCK"
             "Electro":
-                show fuyu_content
-                f "J'AIME BIEEENG !!!!" #rajouter un skin pour ça, style fuyu beauf jsp
-                f "Nan pardon je m'emporte .."
+                jump electro
             "Pop" :
                 jump pop
+            "Rap" :
+                jump rap
 
 
 
@@ -497,15 +497,49 @@ label pop :
 
             if k_pop == "Jimin":
 
-                f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là..."
+                f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là... Sans jugement bien sûr ^^"
                 
             elif k_pop == "Jungkook" or k_pop == "JK" or k_pop == "jungkook" :
                 f "Bien sûûr lui là.. Tu connais Seven Days a week donc ?"
                 m "Bien sûr !!"
-                f "Tu hum.. LES PAROLES PTN !! C'est un harceleur et personne ne remarque j'ai l'impression.."
+                f "Tu hum.. LES PAROLES MERDE !! C'est un harceleur et personne ne remarque j'ai l'impression.."
+                m "Ah boon ??"
+                f "Tu écouteras les paroles tu verras, c'est horrible."
+            
+            elif k_pop == "BTS" or k_pop == "Brevet de technicien supérieur" :
+
+                f "Ah d'accord.. C'est pas mal, mais ça reste très basique. Je t'avoue que c'est pas mon groupe préféré."
+                m "Ouais je comprends. Mais j'écoute pas que ça bien sûr !"
+                f "J'espère bien !"
+            
+            elif k_pop == "BP" or k_pop == "blackpink" k_pop == "Blackpink" or k_pop == "BlackPink" :
+
+                f "J'aime bien, c'est pas mal du tout ça !! Bombaya c'est ma pref je pense."
+
+            elif k_pop == "Jisoo" or k_pop == "jisoo" :
+                f "Ah mais oui, j'aime bien flower !"
+            elif k_pop == "Jennie" or k_pop == "jennie" :
+
+                f "C'est elle qui a fait solo non ? J'ai entendu du bien de la version jazz, mais j'aime pas le clip."
 
             else :
                 f  "[k_pop]? Connais pas.. Bon mes connaissances sont peut-être un peu limitées.."
+        "Pop américaine" :
+            f "Taylor Swift tout ça ?"
+            m "Oui en gros.."
+        "Pop rock" :
+            f "Je suis sans doute inculte, mais quelle différence avec le rock ?"
+            m "Je chipote."
+
+label electro :
+
+    show fuyu_content
+    f "J'AIME BIEEENG !!!!" #rajouter un skin pour ça, style fuyu beauf jsp
+    f "Nan pardon je m'emporte .."
+
+label rap :
+    f "... Quel rap ? "
+        
  
 
 
