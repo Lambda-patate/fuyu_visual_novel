@@ -474,7 +474,7 @@ label eschwege_lover :
 
     f "Viens, on est pas loin de chez moi !"
 
-    scene Chambre_de_Fuyu
+    scene chambre
     show fuyu_normal
 
     f "Bienvenue !!"
