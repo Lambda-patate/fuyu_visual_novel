@@ -474,14 +474,24 @@ label eschwege_lover :
 
     f "Viens, on est pas loin de chez moi !"
 
-    scene Chambre_de_fuyu
+    scene Chambre_de_Fuyu
     show fuyu_normal
 
     f "Bienvenue !!"
 
     m "Merci !!"
 
-    "J'ai plus d'idées là aidez moi (oups vous pouvez revenir en arrière pour l'autre choix 10x mieux)"
+    menu :
+        f "Je peux t'enmener quelque part ou tu préfère te reposer ?"
+
+        "Rester ici" :
+            m "On peut rester chez toi ? Je suis super fatigué.e à cause de toute cette marche..."
+            f "Bien sûr ! On verra ça une autre fois."
+        "Sortir" :
+            m "Je te suis !"
+            f "Wow t'es endurant.e !"
+            m "Merci merci hehe !"
+
 
     "{b}Fin pas finie{/b}."
 
