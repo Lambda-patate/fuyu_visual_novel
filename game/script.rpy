@@ -504,40 +504,75 @@ label pop :
     menu :
         "Quelle pop ?"
         "K pop":
-            f "Je vois je vois, et t'écoutes quoi comme chanson ? Je m'y connais un peu.."
-            python :
-                k_pop = renpy.input("Quel.le artiste de k pop ?")
+            menu :
 
+                f "Je vois je vois, et t'écoutes qui ? Je m'y connais un peu.."
+            
+                "Jimin":
 
-            if k_pop == "Jimin":
-
-                f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là... Sans jugement bien sûr ^^"
+                    f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là... Sans jugement bien sûr ^^"
                 
-            elif k_pop == "Jungkook" or k_pop == "JK" or k_pop == "jungkook" :
-                f "Bien sûûr lui là.. Tu connais Seven Days a week donc ?"
-                m "Bien sûr !!"
-                f "Tu hum.. LES PAROLES MERDE !! C'est un harceleur et personne ne remarque j'ai l'impression.."
-                m "Ah boon ??"
-                f "Tu écouteras les paroles tu verras, c'est horrible."
+                "Jungkook":
+                    f "Bien sûûr lui là.. Tu connais Seven Days a week donc ?"
+                    m "Bien sûr !!"
+                    f "Tu hum.. LES PAROLES MERDE !! C'est un harceleur et personne ne remarque j'ai l'impression.."
+                    m "Ah boon ??"
+                    f "Tu écouteras les paroles tu verras, c'est horrible."
             
-            elif k_pop == "BTS" or k_pop == "Brevet de technicien supérieur" :
+                "BTS" :
 
-                f "Ah d'accord.. C'est pas mal, mais ça reste très basique. Je t'avoue que c'est pas mon groupe préféré."
-                m "Ouais je comprends. Mais j'écoute pas que ça bien sûr !"
-                f "J'espère bien !"
+                    f "Ah d'accord.. C'est pas mal, mais ça reste très basique. Je t'avoue que c'est pas mon groupe préféré."
+                    m "Ouais je comprends. Mais j'écoute pas que ça bien sûr !"
+                    f "J'espère bien !"
             
-            elif k_pop == "BP" or k_pop == "blackpink" k_pop == "Blackpink" or k_pop == "BlackPink" :
+                "Blackpink" :
 
-                f "J'aime bien, c'est pas mal du tout ça !! Bombaya c'est ma pref je pense."
+                    f "J'aime bien, c'est pas mal du tout ça !! Bombaya c'est ma pref je pense."
 
-            elif k_pop == "Jisoo" or k_pop == "jisoo" :
-                f "Ah mais oui, j'aime bien flower !"
-            elif k_pop == "Jennie" or k_pop == "jennie" :
+                "Jisoo" :
 
-                f "C'est elle qui a fait solo non ? J'ai entendu du bien de la version jazz, mais j'aime pas le clip."
+                    f "Ah mais oui, j'aime bien flower !"
 
-            else :
-                f  "[k_pop]? Connais pas.. Bon mes connaissances sont peut-être un peu limitées.."
+                "Jennie":
+
+                    f "C'est elle qui a fait solo non ? J'ai entendu du bien de la version jazz, mais j'aime pas le clip."
+
+                "autre" :
+                    python :
+                        k_pop = renpy.input("Quel autre artiste ?")
+
+                            if k_pop == "Jimin" 
+        
+                                f "Mais oui, je connais Jimin, c'est celui qui a une voix bizarre là... Sans jugement bien sûr ^^"
+                
+                            elif k_pop == "Jungkook" or k_pop == "JK" or k_pop == "jungkook" :
+                                f "Bien sûûr lui là.. Tu connais Seven Days a week donc ?"
+                                m "Bien sûr !!"
+                                f "Tu hum.. LES PAROLES MERDE !! C'est un harceleur et personne ne remarque j'ai l'impression.."
+                                m "Ah boon ??"
+                                f "Tu écouteras les paroles tu verras, c'est horrible."
+                
+                            elif k_pop == "BTS" or k_pop == "Brevet de technicien supérieur" :
+                
+                                f "Ah d'accord.. C'est pas mal, mais ça reste très basique. Je t'avoue que c'est pas mon groupe préféré."
+                                m "Ouais je comprends. Mais j'écoute pas que ça bien sûr !"
+                                f "J'espère bien !"
+            
+                            elif k_pop == "BP" or k_pop == "blackpink" k_pop == "Blackpink" or k_pop == "BlackPink" :
+            
+                                f "J'aime bien, c'est pas mal du tout ça !! Bombaya c'est ma pref je pense."
+
+                            elif k_pop == "Jisoo" or k_pop == "jisoo" :
+
+                                f "Ah mais oui, j'aime bien flower !"
+
+                            elif k_pop == "Jennie" or k_pop == "jennie" :
+                
+                                f "C'est elle qui a fait solo non ? J'ai entendu du bien de la version jazz, mais j'aime pas le clip."
+                    
+                            else :
+                                f  "[k_pop]? Connais pas.. Bon mes connaissances sont peut-être un peu limitées.."
+                        
         "Pop américaine" :
             f "Taylor Swift tout ça ?"
             m "Oui en gros.."
