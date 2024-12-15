@@ -560,41 +560,40 @@ label rap :
         "Rap allemand":
             show fuyu_content
             f "Moi aussi j'adore !! T'écoutes qui ?"
-                python :
-                    rap = renpy.input("Quel rappeur.se français.e ?")
+            python :
+                rap = renpy.input("Quel rappeur.se français.e ?")
 
-                if rap == "Diams" or rap == "diams" or rap == "Diam's":
-                    f "ouii je connais !! C'est très underground en Allemagne, mais j'adore !! Je pense que ma chanson préférée d'elle c'est La boulette."
-                    m "Incroyable la boulette ! Très bon choix."
-                    f "On a les mêmes gouts c'est trop bien !"
-                    m "Ouais c'est fou ça !"
-                elif rap == "Big flo et oli" or rap == "bigflo" or rap =="bigflo et oli" or rap == "oli et bigflo" or rap == "Toulouse" or rap == "Oli" or rap == "Bigflo et Oli":
-                    f "Louis prend son bus"
-                    f "Comme tous les matins !!"
-                    menu :
-                        ".."
-                        "Il chevauche son nimbus":
-                            m "En mangeant du pain !"
-                            show fuyu_enerve
-                            f "Euuuh pardon ??"
-                            "Paniqué.e, vous improvisez."
-                            m "Il roule sur une chenille."
-                            m "Et il se sent pas bien."
-                            show fuyu_normal
-                            f "..."
-                            f "T'as pas pire encore comme reprise ?"
-                            "{b}Fin Inculte{/b}."
-                        "Il croise cette même fille" :
-                            m "Avec son doux parfum !"
-                            m "Tiens doux parfum c'est pas une capacité pokémon ça ?"
-                            f "Si si *rigole* pourquoi tu penses à ça ?"
-                            m "Juste doux parfum ça m'a évoqué des souvenirs.."
-                            f "haha ! T'es vraiment un.e nerd !"
-                        "Il la prend par les couettes":
-                            f "AAH STOP STOP STOP !!"
-                            f "T'as tout mélangé là, et en plus avec de la merde, c'est décevant."
-                            m "ah je.. Désolé.e"
-                            "{b}Fin Mauvais goût{/b}."
+            if rap == "Diams" or rap == "diams" or rap == "Diam's":
+                f "ouii je connais !! C'est très underground en Allemagne, mais j'adore !! Je pense que ma chanson préférée d'elle c'est La boulette."
+                m "Incroyable la boulette ! Très bon choix."
+                f "On a les mêmes gouts c'est trop bien !"                    m "Ouais c'est fou ça !"
+            elif rap == "Big flo et oli" or rap == "bigflo" or rap =="bigflo et oli" or rap == "oli et bigflo" or rap == "Toulouse" or rap == "Oli" or rap == "Bigflo et Oli":
+                f "Louis prend son bus"
+                f "Comme tous les matins !!"
+                menu :                        
+                    ".."
+                    "Il chevauche son nimbus":
+                        m "En mangeant du pain !"
+                        show fuyu_enerve
+                        f "Euuuh pardon ??"
+                        "Paniqué.e, vous improvisez."
+                        m "Il roule sur une chenille."
+                        m "Et il se sent pas bien."
+                        show fuyu_normal
+                        f "..."
+                        f "T'as pas pire encore comme reprise ?"
+                        "{b}Fin Inculte{/b}."
+                    "Il croise cette même fille" :
+                        m "Avec son doux parfum !"
+                        m "Tiens doux parfum c'est pas une capacité pokémon ça ?"
+                        f "Si si *rigole* pourquoi tu penses à ça ?"
+                        m "Juste doux parfum ça m'a évoqué des souvenirs.."
+                        f "haha ! T'es vraiment un.e nerd !"
+                    "Il la prend par les couettes":
+                        f "AAH STOP STOP STOP !!"
+                        f "T'as tout mélangé là, et en plus avec de la merde, c'est décevant."
+                        m "ah je.. Désolé.e"
+                        "{b}Fin Mauvais goût{/b}."
 
 
                 
@@ -602,6 +601,7 @@ label rap :
             f "J'écoute pas du tout ce genre de musique, mais je trouve que c'est quand même cool ! Fifty cents je connais."
 
 label convention :
+    scene convention
     "Vous continuez à marcher. Vous aviez beau faire le.a fièr.e devant Fuyu, vous êtes exténué.e."
     "Vous parvenez cependant à tenir, la compagnie de l'oiseau semble vous donner de la force."
 
