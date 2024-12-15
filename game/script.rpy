@@ -460,7 +460,7 @@ label rizz :
             f "Et sinon, t'écoute comme genre de musique ?"
 
             "Rock":
-                show fuyu_musikos
+                show fuyu_normal_guitare
                 f "YEAHHH"
             "Electro":
                 jump electro
@@ -598,9 +598,14 @@ label rap :
                 "{b}Fin Mauvais goût{/b}."
             
             elif rap == "JUL" or rap == "jul" or rap == "Jul" or rap == "le j" or rap == "le J" or rap == "le J c'est le S" :
-                f "Nique ta mère sur la Canebière, nique tes morts sur le Vieux-Port" #skin molière
-                f "Non pardon c'est du mauvais goût je trouve."
+                show fuyu_normal_perruque
+                hide fuyu_kittycutter
+                hide fuyu_kittycutteropen
+                f "Nique ta mère sur la Canebière, nique tes morts sur le Vieux-Port" 
+                show fuyu_enerve_perruque
+                f "C'est pas mauvais c'est très mauvais."
                 "{b}Fin Mauvais goût{/b}."
+                return
 
             elif rap == "Orelsan" or rap == "orelsan" :
                 f "Ouii lui il écrit des paroles !! J'aime bien basique."
