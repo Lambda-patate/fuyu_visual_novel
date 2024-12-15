@@ -22,7 +22,7 @@ default rap = False
 label start:
 
     # Start by playing some music.
-    play music "popo3.mp3"
+    # play music "popo3.mp3"
 
     scene moone
     with fade
@@ -557,17 +557,15 @@ label rap :
         "Rap français":
             show fuyu_kittycutteropen
             f "Quel rap français ??"
-        "Rap allemand":
-            show fuyu_content
-            f "Moi aussi j'adore !! T'écoutes qui ?"
             python :
                 rap = renpy.input("Quel rappeur.se français.e ?")
 
             if rap == "Diams" or rap == "diams" or rap == "Diam's":
                 f "ouii je connais !! C'est très underground en Allemagne, mais j'adore !! Je pense que ma chanson préférée d'elle c'est La boulette."
                 m "Incroyable la boulette ! Très bon choix."
-                f "On a les mêmes gouts c'est trop bien !"                    m "Ouais c'est fou ça !"
-            elif rap == "Big flo et oli" or rap == "bigflo" or rap =="bigflo et oli" or rap == "oli et bigflo" or rap == "Toulouse" or rap == "Oli" or rap == "Bigflo et Oli":
+                f "On a les mêmes gouts c'est trop bien !"
+                m "Ouais c'est fou ça !"
+            elif rap == "Big flo et oli" or rap == "bigflo" or rap =="bigflo et oli" or rap == "oli et bigflo" or rap == "Toulouse" or rap == "Oli" or rap == "Bigflo et Oli" or rap == "Bigflo et oli" :
                 f "Louis prend son bus"
                 f "Comme tous les matins !!"
                 menu :                        
@@ -599,11 +597,26 @@ label rap :
                 "{b}Fin Mauvais goût{/b}."
             
             elif rap == "JUL" or rap == "jul" or rap == "Jul" or rap == "le j" or rap == "le J" or rap == "le J c'est le S" :
-                f "Nique ta mère sur la ca"
-                
+                f "Nique ta mère sur la Canebière, nique tes morts sur le Vieux-Port" #skin molière
+                f "Non pardon c'est du mauvais goût je trouve."
+                "{b}Fin Mauvais goût{/b}."
 
+            elif rap == "Orelsan" or rap == "orelsan" :
+                f "Ouii lui il écrit des paroles !! J'aime bien basique."
+                m "Il dit les termes dans basique."
+                m "Tu connais la quête ?"
+                f "Bien sûr !! Elle aussi elle est pas mal."
 
-                
+            elif rap == "oui" or rap == "Oui" or rap == "OUI" or rap == "non" or rap == "Non" or rap == "NON":
+                f "C'était une question ouverte, c'est même pas drôle."
+
+            else :
+                f "Je connais pas, t'as de la chance, je te laisse le bénéfice du doute."
+
+        "Rap allemand":
+            show fuyu_content
+            f "Moi aussi j'adore !! T'écoutes qui ?"       
+                               
         "Rap US":
             f "J'écoute pas du tout ce genre de musique, mais je trouve que c'est quand même cool ! Fifty cents je connais."
 
