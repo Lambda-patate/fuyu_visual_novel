@@ -594,6 +594,13 @@ label rap :
                         f "T'as tout mélangé là, et en plus avec de la merde, c'est décevant."
                         m "ah je.. Désolé.e"
                         "{b}Fin Mauvais goût{/b}."
+            elif rap == "ninho" or rap == "Ninho" :
+                f "Ah non, ça c'est non. Ninhio c'est vraiment nul pardon."
+                "{b}Fin Mauvais goût{/b}."
+            
+            elif rap == "JUL" or rap == "jul" or rap == "Jul" or rap == "le j" or rap == "le J" or rap == "le J c'est le S" :
+                f "Nique ta mère sur la ca"
+                
 
 
                 
