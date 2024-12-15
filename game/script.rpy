@@ -460,7 +460,8 @@ label rizz :
             f "Et sinon, t'écoute comme genre de musique ?"
 
             "Rock":
-                f "LOUISE M'A MIS UN GUN SUR LA TEMPE J'ADORE LE ROCK"
+                show fuyu_musikos
+                f "YEAHHH"
             "Electro":
                 jump electro
             "Pop" :
