@@ -462,12 +462,54 @@ label rizz :
             "Rock":
                 show fuyu_normal_guitare
                 f "YEAHHH"
+                show fuyu_regardeailleurs_guitare
+                f "J'écoute Nirvana principalement."
+                show fuyu_normal_guitare
+                m "C'est très bien çaa ! C'est quoi ta chanson préférée ?"
+                f "Endless, Nameless."
+                m "Tiens c'est bizarre je la connais pas !"
+                f "Elle est pas très connue c'est normal, je te la ferai écouter si tu veux." #force on est pas ensemble XD
+                m "OK ! Avec plaisir !" #si tu savais...
             "Electro":
                 jump electro
             "Pop" :
                 jump pop
             "Rap" :
                 jump rap
+            "Country" :
+                f "Ah.. On écoute pas du tout la même chose. Tu me feras découvrir !"
+                m "Bien sûr !"
+            "Un peu de tout..." :
+                f "C'est une réponse de quelqu'un qui a des playlists aléatoires ça !"
+                show fuyu_content
+                f "Je fais pareil tkt"
+                f "Mais dis moi un style, choisis en un ! Je sais c'est dur de choisir.. Mais je veux avoir une idée de ce que tu écoutes."
+                menu :
+                    "Musique écoutée ?"
+                    "Rock":
+                        show fuyu_normal_guitare
+                        f "YEAHHH"
+                        show fuyu_regardeailleurs_guitare
+                        f "J'écoute Nirvana principalement."
+                        show fuyu_normal_guitare
+                        m "C'est très bien çaa ! C'est quoi ta chanson préférée ?"
+                        f "Endless, Nameless."
+                        m "Tiens c'est bizarre je la connais pas !"
+                        f "Elle est pas très connue c'est normal, je te la ferai écouter si tu veux." #force on est pas ensemble XD
+                        m "OK ! Avec plaisir !" #si tu savais...
+                        jump musique_suite
+                    "Electro":
+                        jump electro
+                    "Pop" :
+                        jump pop
+                    "Rap" :
+                        jump rap
+                    "Country" :
+                        f "Ah.. On écoute pas du tout la même chose. Tu me feras découvrir !"
+                        m "Bien sûr !"
+                        jump musique_suite
+
+                
 
 
 
@@ -484,7 +526,7 @@ label eschwege_lover :
     m "Merci !!"
 
     menu :
-        f "Je peux t'enmener quelque part ou tu préfère te reposer ?"
+        f "Je peux t'enmener quelque part ou tu préfères te reposer ?"
 
         "Rester ici" :
             m "On peut rester chez toi ? Je suis super fatigué.e à cause de toute cette marche..."
@@ -498,6 +540,7 @@ label eschwege_lover :
 
 
     "{b}Fin pas finie{/b}."
+    return
 
 label pop :
     f "Alors c'est très bien, mais c'est pas précis.."
@@ -576,15 +619,123 @@ label pop :
         "Pop américaine" :
             f "Taylor Swift tout ça ?"
             m "Oui en gros.."
+            menu :
+                "T'as des noms plus précis ?"
+
+                "Nathalie Jane":
+                    f "Je connais pas du tout, c'est quoi ?"
+                    m "C'est ... Demande à Laura."
+
+                "Ed Sheeran":
+                    f "Ah ça je connais ! C'est celui qui a fait Shape of you."
+                    show fuyu_rougit
+                    f "Mais j'en connais pas d'autre ..."
+                    m "C'est pas grave, je te ferai écouter si tu veux !"
+                    show fuyu_content
+                    f "Ouii ! Avec plaisir !"
         "Pop rock" :
             f "Je suis sans doute inculte, mais quelle différence avec le rock ?"
             m "Je chipote."
+    jump musique_suite
+            
 
 label electro :
 
     show fuyu_content
     f "J'AIME BIEEENG !!!!" #rajouter un skin pour ça, style fuyu beauf jsp
     f "Nan pardon je m'emporte .."
+    f "T'écoutes qui ?"
+    menu :
+        "Quel.le.s artiste.s ?"
+        "Daft Punk":
+            f "Approuvé !! Je suis fan !!" #mettre un skin de fuyu daft punk par pitié
+            menu :
+                "C'est laquelle ta chanson péférée ?"
+                "Arround the world":
+                    f "Tu connais les paroles ?" #skin fuyu rigole
+                    m "Ah je suis pas sûr.e de m'en souvenir haha !"
+                "One more time":
+                    f "Elle est bien ! Moi aussi j'adore les saloperies de danettes aux fruits !"
+                    menu :
+                        "Pardon ??":
+                            f "haha !! Réécoute la tu verras à un moment on dirait qu'il dit ça ! Tu pourras plus jamais entendre autre chose maintenant hehe !!"
+                        "Haha j'ai la ref !":
+                            f "Mais t'es trop un.e vrai.e !! Incroyable !"
+                        "Salope toi même !":
+                            show fuyu_enerve
+                            f "Ta mère la pute toi ! T'es un baisé !"
+                            f "Démerde toi, va te paumer dans la pampa allemande je m'en bas les couilles."
+                            "{b}Fin connard{/b}."                 
+                "Better, Faster, Stronger":
+                    f "Ouii !! C'est aussi une de mes préférées, même si c'est très dur de choisir."
+                    m "^^"
+                "Instant crush":
+                    f "Très bon choix !! C'est à la fois electro et romantique, même si romantique n'est pas un genre musical.."
+                    f "Je veux dire que c'est rare que Daft Punk aborde ce sujet, et c'est cool !"
+                    m "Oui j'adore les paroles !"
+                    f "Tu t'y retrouves ?"
+                    "Vous regardez ailleurs un instant, essayant vainement de capter un courant d'air immaginaire pour refroidir vos joues."
+                    m "Oui."
+                    show fuyu_rougit
+                    f "haha !"
+                    hide fuyu_rougit
+                "Lose yoursel to dance":
+                    f "Pas mal pas mal, elle porte bien son nom !"
+                    m "C'est très mouvementé"
+                    f "haha, c'est l'adjectif parfait effectivement !"
+                "Veridis Quo":
+                    f "C'est ouii, elle est super celle là ! Un petit côté triste qu'on retrouve peu dans leurs autres chansons.."
+                    f "T'as la ref si je te dis Laure Adler ?"
+                    menu:
+                        "C'était leur productrice non ?":
+                            show fuyu_ferme
+                            f "non."
+                            f "Pas du tout, mais c'est pas grave."
+                            show fuyu_normal
+                            m "Mais alors, c'était qui ?"
+                            f "C'était une animatrice radio qui utilisait cette chanson pour son jingle. C'est pour ça que la chanson m'a marqué."
+                        "Non je ne la connais pas":
+                            f "Ah bon pas grave, tant pis"
+                            m "Dis moi qui c'est au moins !"
+                            f "C'était une animatrice radio qui utilisait cette chanson pour son jingle. C'est pour ça que la chanson m'a marqué."
+                        "Remède à la mélancolie":
+                            f "hahaa !!"#fuyu rigole
+                            f "C'est l'autre !"
+                            m "Ahh noooon !! C'est l'heure bleue ?"
+                            f "Eh oui ! Mais le créneau a été repris pour Remède à la mélancolie je crois."
+                            m "Oui dans mes souvenirs aussi."
+                        "L'heure bleue":
+                            show fuyu_rougit
+                            f "T'es un.e vrai.e !!!"
+                            m "hehe, c'est la culture générale !"
+                            show fuyu_normal_perruque
+                            f "J'aime bien les intellectuels, ça tombe bien haha !"
+                            m "D'où tu sors cette perru-"
+                            f "C'est une teinture."
+                            m "Heeeein ??!"
+                            show fuyu_content
+                            f "Et hop une nouvelle coupe !"
+                            m "... Comment ??"
+                            f "haha, non c'est une perruque tu t'es fait.e avoir !!"#rigole
+                            m "Ah mais t'es trop rapide pour changer !!"
+                            f "Hehe je sais c'est un talent caché."
+        "Lena Raine":
+            f "Ouii AAH LE BON GOÛT !!!"
+            f "c'est la reine elle porte bien son nom !"
+            f "Et si tu devais ne choisir qu'un seul morceau d'elle ?"
+            m "Ah c'est dur !!"
+            menu:
+                "Pigstep":
+                    f "T'es fan de minecraft toi !"
+                    m "Ouais, pas toi ?"
+                    f "Si si je suis fan, et je suis fière de l'être !"
+                    m "Et puis la musique est bien, même si on joue pas."
+                    f "C'est Lena Raine ça, et c'est la force de tous les bons compositeurs, on peut écouter leur muique sans avoir joué au jeu ou sans avoir vu le film."
+                    m "Comme Toby Fox aussi"
+                    f "Exactement !"
+
+
+    jump musique_suite
 
 label rap :
     show fuyu_kittycutter
